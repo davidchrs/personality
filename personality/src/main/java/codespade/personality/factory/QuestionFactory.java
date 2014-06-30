@@ -1,0 +1,94 @@
+package codespade.personality.factory;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import codespade.personality.constant.MBTI;
+import codespade.personality.model.MultipleChoice;
+import codespade.personality.model.MultipleChoiceWrapper;
+
+public class QuestionFactory {
+	public static MultipleChoiceWrapper createMBTIQuestions(){
+		int i = 1;
+		List<MultipleChoice> questions = new ArrayList<MultipleChoice>();
+		questions.add(new MultipleChoice(i++, "Saya ingin ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Lebih mengenal orang-orang", MBTI.THINKING+"::Menyelesaikan tugas"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih suka bila ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Kepala saya di awan", MBTI.SENSING+"::Kaki saya di tanah"}));
+		questions.add(new MultipleChoice(i++, "Penting buat saya untuk ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Menggunakan energi saya", MBTI.INTROVERT+"::Menghemat energi saya"}));
+		questions.add(new MultipleChoice(i++, "Kesempatan-kesempatan dalam kegiatan sosial ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Jarang membuat saya senang", MBTI.EXTRAVERT+"::Biasanya membuat saya senang"}));
+		questions.add(new MultipleChoice(i++, "Cara saya cenderung ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Konvensional", MBTI.INTUITION+"::Revolusioner"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih suka orang yang ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Berempati", MBTI.THINKING+"::Efisien"}));
+		questions.add(new MultipleChoice(i++, "Ketika telepon saya berbunyi, saya ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Segera mengangkatnya", MBTI.INTROVERT+"::Berharap tidak perlu mengangkatnya"}));
+		questions.add(new MultipleChoice(i++, "Saya cenderung untuk", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Membiarkan sesuatu berjalan semestinya", MBTI.INTUITION+"::Mencari cara untuk mengubah sesuatu"}));
+		questions.add(new MultipleChoice(i++, "Saat menghadapi masalah, saya berfokus pada ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Orang-orang", MBTI.THINKING+"::Isu-isu yang ada"}));
+		questions.add(new MultipleChoice(i++, "Lebih buruk menjadi orang yang ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Tidak fleksibel", MBTI.JUDGING+"::Tidak tegas"}));
+		questions.add(new MultipleChoice(i++, "Saya menggolongkan diri saya sebagai orang yang ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Suka menyendiri", MBTI.EXTRAVERT+"::Supel"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih suka bekerja ...", MBTI.EXTRAVERT_INTROVERT,new String[]{MBTI.EXTRAVERT+"::Bersama tim", MBTI.INTROVERT+"::Sendiri"}));
+		questions.add(new MultipleChoice(i++, "Saya cenderung untuk ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Melihat secara garis besar", MBTI.SENSING+"::Fokus pada hal-hal detil"}));
+		questions.add(new MultipleChoice(i++, "Ruang kerja / belajar saya biasanya ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Berantakan", MBTI.JUDGING+"::Rapi"}));
+		questions.add(new MultipleChoice(i++, "Saya senang meluangkan waktu saya bersama ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Sekelompok teman-teman", MBTI.INTROVERT+"::Sendiri atau bersama dengan teman dekat"}));
+		questions.add(new MultipleChoice(i++, "Dalam percakapan satu lawan satu, bisanya saya lebih banyak ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Berbicara", MBTI.INTROVERT+"::Mendengar"}));
+		questions.add(new MultipleChoice(i++, "Saat dalam percakapan, saya ...", MBTI.THINKING_FEELING, new String[]{MBTI.THINKING+"::Mengatakan hal sebenar-benarnya", MBTI.FEELING+"::berhati-hati untuk mencegah konflik"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih bangga akan ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Kesuksesan saya", MBTI.INTUITION+"::Tujuan / goal saya"}));
+		questions.add(new MultipleChoice(i++, "Mengungkapkan perasaan dan emosi saya itu ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Sulit", MBTI.THINKING+"::Mudah"}));
+		questions.add(new MultipleChoice(i++, "Saya orang yang ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Subjektif", MBTI.THINKING+"::Objektif"}));
+		questions.add(new MultipleChoice(i++, "Saya menghibur diri saya melalui ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Imajinasi saya", MBTI.SENSING+"::Keadaan sekitar saya"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih tertarik pada ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Hal-hal yang sedang terjadi", MBTI.INTUITION+"::Kemungkinan yang akan datang"}));
+		questions.add(new MultipleChoice(i++, "Saya bersemangat ketika mempelajari ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Teori", MBTI.SENSING+"::Fakta"}));
+		questions.add(new MultipleChoice(i++, "Saya membuat keputusan ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Lebih awal", MBTI.PERCEIVING+"::Hanya ketika diperlukan"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih suka menghabiskan waktu untuk ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Instropeksi diri", MBTI.EXTRAVERT+"::Berinteraksi dengan orang lain"}));
+		questions.add(new MultipleChoice(i++, "Saat berada di sekitar orang-orang, saya ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Memulai pembicaraan", MBTI.INTROVERT+"::Cenderung diam"}));
+		questions.add(new MultipleChoice(i++, "Saya menganggap diri saya sebagai ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Pemikir abstrak", MBTI.SENSING+"::Pemikir konkret"}));
+		questions.add(new MultipleChoice(i++, "Ketika saya perlu untuk menegur seseorang, saya ...", MBTI.THINKING_FEELING, new String[]{MBTI.THINKING+"::Cepat melakukannya", MBTI.FEELING+"::Takut melukai perasaan orang lain"}));
+		questions.add(new MultipleChoice(i++, "Menjadi pusat perhatian itu ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Tidak nyaman", MBTI.EXTRAVERT+"::Menyenangkan"}));
+		questions.add(new MultipleChoice(i++, "Saat membayar barang di kasir, saya ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Membayar tanpa mengobrol", MBTI.EXTRAVERT+"::Mengobrol sedikit dengan penjaga kasir"}));
+		questions.add(new MultipleChoice(i++, "Perubahan menurut saya ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Susah", MBTI.PERCEIVING+"::Mudah"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih senang dengan hal-hal yang akan terjadi pada ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Hari ini atau beberapa hari ke depan", MBTI.INTUITION+"::Beberapa tahun mendatang"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih suka dengan ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Aktivitas spontan", MBTI.PERCEIVING+"::Aktivitas rutin"}));
+		questions.add(new MultipleChoice(i++, "Saya senang dengan ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Jadwal dan perencanaan", MBTI.PERCEIVING+"::Kebebasan melakukan sesuatu"}));
+		questions.add(new MultipleChoice(i++, "Saya menambah teman baru ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Seiring berjalannya waktu", MBTI.EXTRAVERT+"::Dengan cepat"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih sering mengukur segala sesuatu dengan ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Perkiraan", MBTI.JUDGING+"::Presisi"}));
+		questions.add(new MultipleChoice(i++, "Saya orang yang ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Berhati lembut", MBTI.THINKING+"::Berpikiran kuat"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih cepat memberi ...", MBTI.THINKING_FEELING, new String[]{MBTI.THINKING+"::Kritik", MBTI.FEELING+"::Pujian"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih nyaman dengan ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Prinsip", MBTI.SENSING+"::Aturan"}));
+		questions.add(new MultipleChoice(i++, "Pemikiran saya cenderung ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Tidak teratur", MBTI.JUDGING+"::Teratur"}));
+		questions.add(new MultipleChoice(i++, "Dalam bekerja saya ...", MBTI.THINKING_FEELING, new String[]{MBTI.THINKING+"::Berorientasi pada tugas", MBTI.FEELING+"::Berfokus pada relasi / hubungan"}));
+		questions.add(new MultipleChoice(i++, "Saya melihat hidup ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Sebagaimana yang mungkin terjadi", MBTI.SENSING+"::Sebagaimana adanya"}));
+		questions.add(new MultipleChoice(i++, "Saya merasa nyaman dengan menjadi ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Orang yang bertindak spontan", MBTI.JUDGING+"::Perencana"}));
+		questions.add(new MultipleChoice(i++, "Ketika saya harus menyelesaikan tugas, saya biasanya...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Menunggu sampai detik-detik terakhir", MBTI.JUDGING+"::Menyelesaikan secepatnya"}));
+		questions.add(new MultipleChoice(i++, "Akhir minggu yang tenang di rumah itu ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Membosankan", MBTI.INTROVERT+"::Menyegarkan"}));
+		questions.add(new MultipleChoice(i++, "Orang lain menganggap saya orang yang ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Kaku",MBTI.PERCEIVING+"::Tanpa tujuan"}));
+		questions.add(new MultipleChoice(i++, "Saya biasanya datang ke sebuah janji ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Dengan meluangkan waktu lebih",MBTI.PERCEIVING+"::Di detik-detik terakhir"}));
+		questions.add(new MultipleChoice(i++, "Pemikiran saya ada pada ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Apa yang ada saat ini", MBTI.INTUITION+"::Apa yang ada di depan"}));
+		questions.add(new MultipleChoice(i++, "Setelah pertemuan sosial, saya merasa ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Bersemangat", MBTI.INTROVERT+"::Lelah"}));
+		questions.add(new MultipleChoice(i++, "Biasanya saya ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Bekerja, lalu bermain", MBTI.PERCEIVING+"::Bermain, lalu bekerja"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih memperhatikan ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Dunia di sekitar saya", MBTI.INTROVERT+"::Pikiran dan perasaan saya sendiri"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih menghargai ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Belas kasihan", MBTI.THINKING+"::Keadilan"}));
+		questions.add(new MultipleChoice(i++, "Saya senang ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Menghabiskan waktu bersama teman-teman yang sudah dikenal", MBTI.EXTRAVERT+"::Mencari teman baru"}));
+		questions.add(new MultipleChoice(i++, "Saya menganggap diri saya ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.INTROVERT+"::Tertutup secara pribadi", MBTI.EXTRAVERT+"::Terbuka secara sosial"}));
+		questions.add(new MultipleChoice(i++, "Ketika membuat keputusan, saya...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Memperhatikan perasaan orang lain", MBTI.THINKING+"::Tidak memperhatikan perasaan orang lain"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih senang terlibat dalam ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Aktivitas kelompok", MBTI.INTROVERT+"::Aktivitas individual"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih senang orang yang berbicara secara ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Harafiah", MBTI.INTUITION+"::Dengan pengandaian"}));
+		questions.add(new MultipleChoice(i++, "Saya dikendalikan oleh ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Hati", MBTI.THINKING+"::Otak"}));
+		questions.add(new MultipleChoice(i++, "Saya tidak suka ketika orang terlalu ...", MBTI.THINKING_FEELING, new String[]{MBTI.THINKING+"::Emosional", MBTI.FEELING+"::Tidak sensitif"}));
+		questions.add(new MultipleChoice(i++, "Dalam bekerja, saya ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Menyelesaikan tugas", MBTI.PERCEIVING+"::Menunda tugas"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih suka berinvestasi dalam ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Ide baru yang menjanjikan", MBTI.SENSING+"::Metode-metode yang sudah terbukti"}));
+		questions.add(new MultipleChoice(i++, "Saya membuat keputusan didasari oleh ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Perasaan saya", MBTI.THINKING+"::Logika"}));
+		questions.add(new MultipleChoice(i++, "Orang lain menganggap saya sebagai orang yang ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Imaginatif", MBTI.SENSING+"::Praktis"}));
+		questions.add(new MultipleChoice(i++, "Saya senang terhadap suatu tugas ketika ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Menyelesaikannya", MBTI.PERCEIVING+"::Memulainya"}));
+		questions.add(new MultipleChoice(i++, "Saat menilai seseorang, saya ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Cenderung memihak", MBTI.THINKING+"::Tidak memihak"}));
+		questions.add(new MultipleChoice(i++, "Berikan saya ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Detil personal", MBTI.THINKING+"::Fakta"}));
+		questions.add(new MultipleChoice(i++, "Saat tidak ada kegiatan di malam hari, saya suka ...", MBTI.EXTRAVERT_INTROVERT, new String[]{MBTI.EXTRAVERT+"::Pergi bersama teman", MBTI.INTROVERT+"::Menghabiskan waktu sendiri di rumah"}));
+		questions.add(new MultipleChoice(i++, "Saya tertarik pada ...", MBTI.SENSING_INTUITION, new String[]{MBTI.INTUITION+"::Inspirasi dan maksud-maksud tersembunyi", MBTI.SENSING+"::Apa yang di depan mata"}));
+		questions.add(new MultipleChoice(i++, "Saya orang yang ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Berjiwa bebas", MBTI.JUDGING+"::Terstruktur"}));
+		questions.add(new MultipleChoice(i++, "Lebih sering, saya ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Suka dengan perencanaan yang sudah tetap", MBTI.PERCEIVING+"::Mudah beradaptasi"}));
+		questions.add(new MultipleChoice(i++, "Saya menganggap diri saya ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Realis", MBTI.INTUITION+"::Idealis"}));
+		questions.add(new MultipleChoice(i++, "Saya menaruh barang ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.JUDGING+"::Di tempat semestinya", MBTI.PERCEIVING+"::Sesuka saya"}));
+		questions.add(new MultipleChoice(i++, "Saya cenderung untuk bersifat ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Menarik", MBTI.THINKING+"::Masuk akal"}));
+		questions.add(new MultipleChoice(i++, "Dengan orang-orang, saya lebih sering ...", MBTI.THINKING_FEELING, new String[]{MBTI.FEELING+"::Hangat dan bersahabat", MBTI.THINKING+"::Singkat dan langsung ke inti (to the point)"}));
+		questions.add(new MultipleChoice(i++, "Saya lebih dapat bekerja ketika ...", MBTI.JUDGING_PERCEIVING, new String[]{MBTI.PERCEIVING+"::Menentukan hal yang akan dilakukan selanjutnya seiring berjalannya waktu", MBTI.JUDGING+"::Mengikuti jadwal"}));
+		questions.add(new MultipleChoice(i++, "Saya memroses informasi dengan ...", MBTI.SENSING_INTUITION, new String[]{MBTI.SENSING+"::Kelima indera saya", MBTI.INTUITION+"::Intuisi saya"}));
+//		questions.add(new MultipleChoice(i++, "Q", "Type", new String[]{}));
+		
+		return new MultipleChoiceWrapper(questions);
+	}
+}
